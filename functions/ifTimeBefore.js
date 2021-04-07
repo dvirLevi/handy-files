@@ -1,4 +1,4 @@
-const timeBefore = (time, minutesEgo) => {
+const ifTimeBefore = (time, minutesEgo) => {
     let c = new Date();
     let b = new Date(time);
     let timeBetween = c.getTime() - b.getTime();
@@ -10,4 +10,4 @@ const timeBefore = (time, minutesEgo) => {
 }
 
 
-module.exports = timeBefore;
+module.exports = ifTimeBefore;
