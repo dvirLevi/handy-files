@@ -1,5 +1,5 @@
 <template>
-  <div ref="boxFire" class="w-100 center-all box-fire">
+  <div ref="boxFire" class="box-fire">
     <canvas id="canvas">Canvas is not supported in your browser.</canvas>
   </div>
 </template>
@@ -23,7 +23,7 @@
         return (callback) => {
           if (this.ifFireWork) {
             setTimeout(callback, 1000 / 60);
-          }else{
+          } else {
             clearTimeout(callback)
           }
         };
@@ -311,9 +311,15 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .box-fire {
-    /* margin-top: -550px; */
+    width: 100%;
+    height: 100%;
     pointer-events: none;
     position: absolute;
     top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
   }
 </style>
