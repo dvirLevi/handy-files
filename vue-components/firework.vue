@@ -321,5 +321,6 @@
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    z-index: 1000;
   }
 </style>
