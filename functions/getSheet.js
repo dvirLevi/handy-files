@@ -33,7 +33,6 @@ const googleSheetsToObj = (json, arrProp) => {
             })()
         )
     }
-
     return arr;
 }
 
